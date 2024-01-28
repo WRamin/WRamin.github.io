@@ -62,25 +62,25 @@ section {
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgba(161, 228, 38, 0.849);
+   
 }
 
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: slateblue;
+   
 }
 
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(147, 205, 90);
+    
 }
 
 .sec4 {
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(193, 205, 90);
+    
 }
 
 .sec5 {
@@ -142,3 +142,51 @@ section {
         }
     }
 }
+
+
+//header content
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    .left-header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .header-shape {
+            transition: var(--transition-1);
+            width: 65%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);
+        }
+        .image {
+            border-radius: var(--br-sm-2);
+            height: 90%;
+            width: 68%;
+            margin-left: 4rem;
+            background-color: var(--color-black);
+            transition: var(--transition-1);
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: var(--transition-1);
+                //filter: grayscale(100%);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//Other independent things
