@@ -584,6 +584,9 @@ section {
     display: flex;
     align-self: flex-start;
 }
+button {
+    background-color: var(--color-primary);
+}
 .main-btn {
     border-radius: 30px;
     color: inherit;

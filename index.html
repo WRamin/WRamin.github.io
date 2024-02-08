@@ -300,24 +300,25 @@
                     </div>
                 </div>
                 <div class="right-contact">
-                    <form action="" class="contact-form">
+                    <form action="http://localhost:3000/send-email" method="post" class="contact-form">
                         <div class="input-control i-c-2">
-                            <input type="text" required placeholder="Your Name">
-                            <input type="email" required placeholder="Your Email">
+                            <input type="text" name="name" required placeholder="Your Name">
+                            <input type="email" name="email" required placeholder="Your Email">
                         </div>
                         <div class="input-control">
-                            <input type="text" required placeholder="Enter Subject">
+                            <input type="text" name="subject" required placeholder="Enter Subject">
                         </div>
                         <div class="input-control">
-                            <textarea name="" id="" cols="15" rows="8" placeholder="Message Here"></textarea>
+                            <textarea name="message" id="" cols="15" rows="8" required placeholder="Message Here"></textarea>
                         </div>
                         <div class="submit-btn">
-                            <a href="https://drive.google.com/uc?export=download&id=1poRj5FjFM8LNE15BvoEccNvalx4KJH_v" class="main-btn">
-                                <span class="btn-text">Download Resume</span>
-                                <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
-                            </a>   
+                            <button type="submit" class="main-btn">
+                                <span class="btn-text">Submit</span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                            </button>   
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </section>
