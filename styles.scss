@@ -1,4 +1,8 @@
-*{
+
+
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,10 +41,10 @@ a {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
-
+    
 }
 
 section {
@@ -169,7 +173,7 @@ section {
             height: 90%;
             width: 68%;
             margin-left: 4rem;
-            background-color: var(--color-black);
+            background-color: black;
             transition: var(--transition-1);
             img {
                 height: 100%;
@@ -645,3 +649,7 @@ section {
         }
     }
 }
+
+
+
+@import './media';
