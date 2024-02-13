@@ -585,9 +585,7 @@ section {
     display: flex;
     align-self: flex-start;
 }
-button {
-    background-color: var(--color-primary);
-}
+
 .main-btn {
     border-radius: 30px;
     color: inherit;
@@ -654,6 +652,23 @@ button {
     }
 }
 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background-color: var(--color-grey5);
+    cursor: pointer;
+   
+    background-color: var(--color-primary);
+    &:hover {
+        background-color: var(--color-secondary); 
+        transition: var(--transition-1);
+        i {
+            color: var(--color-primary);
+        }
+    }
+}
 
 
 @import './media';

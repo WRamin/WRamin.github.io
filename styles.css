@@ -558,10 +558,6 @@ section {
   align-self: flex-start;
 }
 
-button {
-  background-color: var(--color-primary);
-}
-
 .main-btn {
   border-radius: 30px;
   color: inherit;
@@ -626,6 +622,23 @@ button {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 6.3rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background-color: var(--color-grey5);
+  cursor: pointer;
+  background-color: var(--color-primary);
+}
+button:hover {
+  background-color: var(--color-secondary);
+  transition: var(--transition-1);
+}
+button:hover i {
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 600px) {
