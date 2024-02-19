@@ -1,3 +1,8 @@
+require('dotenv').config();
+
+
+
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 
@@ -13,11 +18,13 @@ app.post('/send-email', (req, res) => {
     const { name, email, subject, message } = req.body;
 
     // Create a transporter with SMTP configuration
+    const gmailPassword = process.env.GMAIL_PASSWORD //this code is used to retrieve the password from the environment
+
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
             user: 'raminballer23@gmail.com',  
-            pass: 'wdni xkqp hlyw lngs'           
+            pass: gmailPassword           
         }
     });
 
