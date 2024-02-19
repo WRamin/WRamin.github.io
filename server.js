@@ -17,7 +17,7 @@ app.post('/send-email', (req, res) => {
         service: 'Gmail',
         auth: {
             user: 'raminballer23@gmail.com',  
-            pass: '3Xfxkyh8'           
+            pass: 'wdni xkqp hlyw lngs'           
         }
     });
 
